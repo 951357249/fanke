@@ -3,7 +3,192 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../dist/css/register.css"/>
 	</head>
 	<body>
+		<div id="head">
+			<div id="headLogo">
+				<span></span>
+			</div>
+		</div>
+		<form method="post" action="./reg.aspx?http%3a%2f%2fwww.vancl.com%2f" id="myform">
+			<div class="regist">
+				<h1>
+					注册新用户 <span>我已经注册，现在就<a href="login.html" id="login">登录</a></span>
+				</h1>
+				<div style="width: 100%; height: 10px; overflow: hidden; clear: both;">
+				</div>
+				<div class="content_left">
+					
+            <style type="text/css">
+                .newtxt
+                {
+                    *overflow:visible;
+                    *z-index:100;
+                }
+            </style>
+            <!--tag-->
+            <div class="infor clearfix" style="overflow: inherit">
+                
+                <div class="email">
+                    <ul id="v2regListInfo_bar">
+                        <li id="lipiccode" style="zoom: 1; display: block;" class="v2reg_bg1">
+                           <!-- <div id="_quickcode" class="newtxt" style="border: 0 none; width: 415px; overflow: inherit;
+                                zoom: 1;">
+                                <label for="_quickpiccode" style="width: 260px; height: 43px; line-height: 43px;
+                                    border: 1px solid rgb(203, 203, 203); z-index: -1;">
+                                    验证码
+                                </label>
+                                <input id="_quickpiccode" name="vanclUserName" type="text" value="" style="width: 260px;
+                                    border: solid 1px #cbcbcb; height: 43px; line-height: 43px;">
+                                <img id="_quickpiccodeimg" oldsrc="/Controls/CalculateValidateCode.ashx?key=reg" src="/Controls/CalculateValidateCode.ashx?key=reg" style="cursor: pointer; vertical-align: middle;
+                                    width: 140px; height: 45px; position: absolute; top: 0; left: 272px;">
+                                <span class="v2reg_tips02" style="display: none;">请输入图片验证码</span>
+                            </div> -->
+                        </li>
+                        <li id="liemail" style="display: none;" class="v2reg_bg1">
+                            <label style="z-index: -1;">
+                                Email地址：</label>
+                            <div class="v2regListInfo_rtCont">
+                                <input type="text" name="textfield" id="input_email" class="reginput_01">
+                                <span class="box3" style="display: none;"></span><span class="v2reg_tips02" style="display: none;"></span><span class="box5" style="display: none;"></span>
+                            </div>
+                            <span class="Rclear"></span></li>
+                        <li id="liphone" style="zoom: 1; display: list-item;" class="v2reg_bg1">
+                            <div class="v2regListInfo_rtCont" style="position: relative; zoom: 1;">
+                                
+                                <div id="_umobile" class="newtxt" style="width: 260px; float: left;">
+                                    <label style="z-index: -1;">
+                                        请输入手机号
+                                    </label>
+                                    <input maxlength="11" type="text" value="" name="textfield" id="input_phone" tabindex="1" placeholder="请输入手机号">
+                                </div>
+                                <a href="#" class="asPhoneregBtn sprite_a" style="width: 140px;">获取短信验证码</a>
+                                <div class="v2regList_Btnimg" style="display: none; width: 140px">
+                                    <img align="absmiddle" src="https://ssl.vanclimg.com/login/loading.gif">
+                                    正在发送...
+                                </div>
+                                <div class="iFloatingwindow">
+                                    <p class="iFloatingIco">
+                                        <img src="https://ssl.vanclimg.com/login/regico.png"></p>
+                                    <dl>
+                                        <dd>
+                                            <p class="inviteTips_ft" style="width: auto">
+                                                <img src="https://ssl.vanclimg.com/login/inviteico.gif">请输入验证码！</p>
+                                        </dd>
+                                        <dd>
+                                            <img id="img_phonevalidate" src="/Controls/CalculateValidateCode.ashx?key=reg" width="145px" height="53px" style="cursor: pointer;"></dd>
+                                        <span class="clear"></span>
+                                        <p style="padding-left: 63px;">
+                                            <span class="ftgry6"><a class="grayft6" href="javascript:void(0)" style="cursor: pointer;">看不清？换一张</a></span></p>
+                                        <dd>
+                                            <input type="text" class="iFloatingInput" value="" id="input_phonevalidate"></dd>
+                                        <dd class="inviteTips_img">
+                                            <a href="javascript:void(0)">
+                                                <img src="https://ssl.vanclimg.com/login/inviteBtn.gif"></a></dd>
+                                    </dl>
+                                    <span class="clear"></span>
+                                </div>
+                                
+                                <span class="box3" style="display: none;"></span><span class="v2reg_tips02" style="display: none;"></span><span class="box5" style="display: none;"></span>
+                            </div>
+                            <span class="Rclear"></span></li>
+                        <li id="liphonecode" class="v2reg_bg1" style="display: list-item;">
+                            
+                            <div class="v2regListInfo_rtCont" style="position: relative;">
+                                
+                                <div id="_mcode" class="newtxt" style="width: 410px;">
+                                    <label style="z-index: -1;">
+                                        填写手机验证码
+                                    </label>
+                                   <input name="textfield" id="input_phonecode" type="text" value="" maxlength="6" tabindex="2" placeholder="验证码">
+                                </div>
+                                <span class="box3" style="display: none;"></span><span class="v2reg_tips01" style="display: none;"></span><span class="box5" style="display: none;"></span>
+                            </div>
+                            <span class="Rclear"></span></li>
+                        <li class="v2reg_bg1">
+                            
+                            <div class="v2regListInfo_rtCont" style="position: relative;">
+                                
+                                <div id="_mpassword" class="newtxt" style="width: 410px;">
+                                    <label style="z-index: -1;">
+                                        设定登录密码
+                                    </label>
+                                    <input maxlength="16" type="password" name="textfield" id="input_password" value="" tabindex="3" placeholder="密码">
+                                </div>
+                                <span class="box3" style="display: none;"></span>
+                                <div class="v2reg_Safetyinfo" style="display: none;">
+                                    <span class="v2regfl">安全强度：</span><div class="v2regimg_03">
+                                    </div>
+                                    <span class="v2reg_Class">高</span>
+                                </div>
+                                <span class="v2reg_tips01" style="display: none;"></span><span class="box5" style="display: none;"></span>
+                            </div>
+                            <span class="Rclear"></span></li>
+                        <li class="v2reg_bg1">
+                            
+                            <div class="v2regListInfo_rtCont" style="position: relative;">
+                                
+                                <div id="_mpassword2" class="newtxt" style="width: 410px;">
+                                    <label style="z-index: -1;">
+                                        再次输入密码
+                                    </label>
+                                    <input maxlength="16" type="password" name="textfield" id="input_repassword" value="" tabindex="4" placeholder="确认密码">
+                                </div>
+                                <span class="box3" style="display: none;"></span><span class="v2reg_tips01" style="display: none;"></span><span class="box5" style="display: none;"></span>
+                            </div>
+                            <span class="Rclear"></span></li>
+                        <li id="livalidatecode" style="height: 75px; display: none;" class="v2reg_bg1">
+                            <!-- display: none; -->
+                            
+                            
+                            <div class="v2regListInfo_rtCont" style="position: relative;">
+                               <!-- <div id="_yanzhenma" class="newtxt" style="width: 410px;">
+                                    <label style="height: 45px; width: 150px; margin: 0px; z-index: -1;">
+                                        验证码
+                                    </label>
+                                    <input maxlength="6" type="text" name="textfield" id="input_validatecode" class="reginput_02" style="width: 150px;">
+                                    <img border="0" src="/Controls/CalculateValidateCode.ashx?key=reg" id="img_validatecode" style="right: -1px; position: absolute; cursor: pointer;">
+                                </div> -->
+                                <span class="box3" style="display: none;"></span><span class="v2reg_tips02" style="display: none;"></span><span class="box5" style="display: none;"></span>
+                            </div>
+                            <span class="Rclear"></span></li>
+                        <li class="v2reg_bg1">
+                            <div class="v2reg_bt">
+                                <span>
+                                    <input id="chk_agreen" type="checkbox" onclick="chkfn.call(this)">
+                                    <label for="chk_agreen" style="width: 100%; float: none;">
+                                        请阅读<a target="_blank" href="http://help.vancl.com/Category/69-1.html" class="reda10_ft12">《VANCL凡客诚品服务条款》</a></label></span>
+                                <span class="box10"></span><a href="javascript:">
+                                    <div id="submitRegister_false" class="submitStyle" style="background: #9A9A9A; color: #FFFFFF;">
+                                        立即注册</div>
+                                </a><a href="javascript:" onclick="$('#submitRegister').click();return false;" style="display: none;">
+                                    <div id="submitRegister" class="submitStyle">立即注册</div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--email-->
+            </div>
+            <!--infor-->
+        </div>
+        <!--content_left-->
+        <div class="content_right">
+            <img src="https://ssl.vanclimg.com/cms/20140829/login120412_newlogo.jpg" id="ContentPlaceHolder1__advertImage" style="width: 465px; display: none">
+            <img src="http://i1.vanclimg.com/cms/20160902/login120412_newlogo.jpg" style="width: 465px">
+        </div>
+        <!--content_right-->
+        <div class="clear">
+        </div>
+    </div>
+    <!--regist-->
+    <input name="hdn_RegisterType" id="hdn_RegisterType" type="hidden" value="phone">
+    <input name="hdn_ResourceHref" id="hdn_ResourceHref_name" type="hidden" value="http://www.vancl.com/?http%3A%2F%2Fwww.vancl.com%2F">
+    <!--wrapper-->
+    </form>
 	</body>
+	<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="../js/register.js"></script>
+	<script type="text/javascript" src="../js/cookie.js"></script>
 </html>

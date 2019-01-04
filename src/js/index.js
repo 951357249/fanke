@@ -20,3 +20,14 @@ var mySwiper = new Swiper('.swiper-container', {
       comtainer.onmouseleave = function () {
         mySwiper.startAutoplay();
       }
+var $lis = $('.navlist ul li');
+$(function() {
+	$($lis).mousemove(function(){
+		if($(this).find('div').is(':animated')==false){
+			$(this).find('div').slideDown('normal');
+		}
+	});
+	$($lis).mouseleave(function(){
+		$(this).find('div').slideUp('normal');
+	});
+});

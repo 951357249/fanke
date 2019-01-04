@@ -20,3 +20,15 @@ li{
 input{
 	border: 1px solid gray;
 }
+sup{ vertical-align:text-top;}
+sub{ vertical-align:text-bottom;}
+legend { color:#000;}
+fieldset{ border:0;} 
+button,input,select,textarea { font-size:100%;}
+table{ border-collapse:collapse; border-spacing:0;}
+body,button,input,select,textarea{ font-family:"Microsoft Yahei"!important; color:#000; font-size:12px;}
+
+address,cite,dfn,em,var{ font-style:normal }
+code,kbd,pre,samp{ font-family:courier new, courier, monospace;}
+
+

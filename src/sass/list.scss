@@ -1,0 +1,552 @@
+@import 'public';
+#head{
+	@include whb(1200px,246px,#fff)
+	margin: 0 auto;
+	#headTop{
+		@include whb(1200px,40px,#f7f7f7)
+		line-height: 40px;
+		#l-top{
+			float :right;
+			@include whb(438px,40px,#f7f7f7);
+			p{
+				display: inline-block;
+				color: gray;
+				font-size: 12px;
+			}
+		}
+	}
+	#ss{
+		@include whb(1200px,100px,#fff);
+		#headSearch{
+			@include whb(440px,86px,#fff);
+			float: right;
+			position: relative;
+			#headSearch-t{
+					@include whb(440px,30px,#fff);
+					margin-top: 27px;
+					position:relative;
+					text-align: center;	
+					line-height: 30px;
+					input{
+						width:278px;
+						height: 28px;
+						padding-left: 30px;
+					}
+					a{
+						width: 47px;
+						height: 31px;
+						display: block;
+						position: absolute;
+						top: 0;
+						right: 130px;
+						background: red;
+						font-size: 18px;
+						color: black;
+					}
+					span{
+						display: inline-block;
+						margin-left: 15px;
+						height: 28px;
+						width: 106px;
+						background: red;
+					}
+			}
+			#headSearch-b{
+				@include whb(440px,29px,#fff);
+				line-height: 30px;
+				position:relative;
+				margin-top:2px;
+				p{
+					padding-left: 15px;
+					font-size: 12px;
+					display: inline-block;
+					float: left;
+				}
+				a{
+					font-size: 12px;
+					display: inline-block;
+					color: #6e6e6e;
+					float: left;
+					margin-right: 10px;
+				}
+			}	
+		}
+	}
+	.navlist {
+			width: 1000px;
+			height: 22px!important;
+			margin: 30px auto!important;
+			padding-left: 200px!important;
+			position: relative!important;
+			z-index: 300!important;
+	}
+	.navlist ul li.vancllogo_Con {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: 0px;
+		background: none;
+		a{
+			margin-top: 50px;
+			width: 200px;
+			height: 70px;
+			display: inline-block;
+			background: url(../../dist/img/logo1.min.png) no-repeat 0px 20px;
+		}
+		
+	}
+	.navlist ul li {
+		float: left;
+		width: 99px;
+		line-height: 22px;
+		padding: 0px 0px 10px;
+		text-align: center;
+		font-size: 16px;
+		font-family: "Microsoft YaHei";
+		position: relative;
+		z-index: 220;
+		a{
+			color: gray;
+			text-decoration: none;
+			font-size: 12px;
+		}
+		.subNav{
+			position: absolute;
+			width: 99px;
+			background: #fff;
+			left: -2px;
+			top: 30px;
+		}
+		a:hover{
+				color: #b81c22;
+		}
+	}
+}
+
+#vjiaTop{
+	@include whb(1200px,2500px,#fff);
+	margin: 0 auto;
+
+
+.breadnav {
+    line-height: 40px;
+    clear: both;
+	.tsmsg {
+		display: inline;
+		float: right;
+		color: #b4b4b4;
+	}
+	.locationdiv {
+		display: inline;
+		float: left;
+		span {
+			color: #b4b4b4;
+		}
+	}
+}
+.selectarea {
+    border: 1px solid #C7CACD;
+    clear: both;
+    padding: 0px 1px 0px 0px;
+	.clearfix {
+		display: inline-block;
+		overflow: hidden;
+	}
+	.selectareali01 {
+		background: #fff;
+	}
+	.selectareali, .selectareali01 {
+		clear: both;
+		overflow: hidden;
+		zoom: 1;
+		line-height: 24px;
+		background: #f5f5f5;
+		.selectareaLeft{
+			width: 66px;
+			display: inline;
+			float: left;
+			text-align: center;
+			em{
+				color: #2f2f2f;
+			}
+    
+		}
+
+	}
+		
+		.selectareaLeft span, .selectareaLeft strong, .selectareaLeft em {
+			color: #959595;
+			height: 24px;
+			line-height: 24px;
+			display: block;
+			padding: 5px 0px;
+		}
+		em, strong, th {
+			font-style: normal;
+			font-weight: normal;
+		}
+		em, strong, th {
+			font-style: normal;
+			font-weight: normal;
+		}
+		.selectareaRight {
+			width: 1130px;
+			display: inline;
+			float: left;
+			padding: 5px 0px 5px;
+			border-left: 1px solid #ccc;
+			background: #fff;
+		}
+}
+#floatdiv{
+		background-color: white;
+			z-index: 80;
+			position: static;
+			top: 0px;
+			.filterTabBarN5 {
+					width: 1200px;
+					 border-bottom: 2px solid #b81c22;
+					height: 30px;
+					line-height: 30px;
+					position: relative;
+					ul{
+						.searchTabbarN5 {
+						margin-left: 1px;
+						width: 755px;
+						}
+						.hover {
+							color: #fff;
+							height: 30px;
+							line-height: 30px;
+							margin-top: 0px;
+							background: #b81c22;
+							border: none;
+						}
+					}
+					.pageBoxN5 {
+						line-height: 40px;
+						position: absolute;
+						right: 0px;
+						top: -2px;
+						.pagediv {
+							display: inline;
+							float: right;
+							span {
+								display: block;
+								float: left;
+								margin-left: 12px;
+							}
+						}
+					}
+			}
+			.filterFormN5 {
+				width: 1200px;
+				border-top: none;
+				height: 34px;
+				position: relative;
+				z-index: 200;
+				border-bottom: 1px solid #ccc;
+				border-left: 1px solid #ccc;
+				.searchCol {
+					float: left;
+					position: relative;
+					ul li {
+						float: left;
+						height: 34px;
+						border: 1px solid #f5f5f5;
+						border-left-color: #ddd;
+						border-bottom: none;
+						border-top: none;
+						line-height: 34px;
+						padding: 0px 12px 0px 20px;
+					}
+					ul li em {
+						display: inline-block;
+						vertical-align: middle;
+					}
+					a span {
+						display: inline-block;
+						height: 11px;
+						width: 11px;
+						line-height: 11px;
+						margin-left: 0px;
+						text-indent: -9999px;
+						vertical-align: middle;
+						background: url(http://i.vanclimg.com/search/sprites_20130606.png) no-repeat;
+					}
+					a span.upTrendBottom {
+						background-position: 0px -3090px;
+					}
+					
+				}
+				.searchbarPrice {
+					float: left;
+					height: 34px;
+					border-right: 1px solid #ddd;
+					width: 133px;
+					.FpriceText0124 {
+						border: 1px solid #aeb1b4;
+						height: 17px;
+						line-height: 17px;
+						width: 35px;
+						padding-left: 3px;
+						float: left;
+						margin: 6px 0px 0px 6px;
+						display: inline;
+						color: #999;
+					}
+				}
+				.hbDpBox {
+					float: right;
+				}
+			}
+		
+  
+}
+
+  
+.pruarea { 
+	width: 1200px;
+    padding-bottom: 20px;
+    _overflow: hidden;
+	margin-top: 88px;
+	ul{
+		
+		li {
+			float: left;
+			margin: 0px 9px 20px 0px;
+			display: inline;
+			width: 231px;
+			.pic {
+				width: 230px;
+				height: 230px;
+				z-index: 0;
+				position: relative;
+				text-align: center;
+			}
+			.pic a:hover img {
+				border: 1px solid #b81c22;
+			}
+			p {
+				margin-top: 10px;
+				padding: 0px 3px 5px;
+				line-height: 20px;
+				text-align: center;
+				font-size: 13px;
+				font-family: "Microsoft YaHei";
+				height: 38px;
+				overflow: hidden;
+			}
+			.Mpricediv0124 {
+				color: #b81c22;
+				font-weight: bold;
+				 span {
+					padding: 0px 3px 5px;
+					line-height: 20px;
+					text-align: center;
+					font-size: 13px;
+					font-family: "Microsoft YaHei";
+				}
+				.Sprice {
+					color: #b81c22;
+				}
+				.Sprice {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+.searchPage20111226 {
+    display: inline;
+    float: right;
+	.pageGGsub20111226 {
+		float: right;
+		width: 49px;
+		height: 26px;
+		border: none;
+		border: 0;
+		margin-left: 10px;
+		background: url(http://i.vanclimg.com/search/sprites_20130606.png) no-repeat scroll 0px -2044px;
+		cursor: pointer;
+		strong {
+			float: right;
+			margin-top: 6px;
+		}
+		.allpagesNumber20111226 {
+			float: right;
+			display: inline-block;
+			margin: 6px 10px 0px;
+		}
+		ul {
+			display: inline;
+			float: right;
+			margin-right: 7px;
+			.currentpage20111226 {
+				color: #FFFFFF;
+				font-weight: bold;
+				background: #b81c22;
+				width: 26px;
+				line-height: 24px;
+				height: 24px;
+				border: 1px solid #ededed;
+			}
+				li {
+				display: inline;
+				float: left;
+				margin-left: 7px;
+				text-align: center;
+			}
+		}
+	}
+	.jquery_pager_prevpage20111226 {
+			cursor: pointer;
+			display: block;
+			width: 43px;
+			height: 24px;
+			padding-left: 14px;
+			line-height: 24px;
+			text-align: left;
+			border: 1px solid #efefef;
+			background: url(http://i.vanclimg.com/search/sprites_20130606.png) no-repeat scroll 3px -1996px;
+		}
+	
+}
+.vanclFoot {
+    overflow: hidden;
+    width: 1118px;
+    height: 282px;
+    margin: 0px auto;
+    padding: 0px 40px 0px;
+    border: 1px solid #e0e0e1;
+    font-family: "Microsoft YaHei";
+    margin-bottom: 25px;
+}
+}
+#footer{
+	@include whb(1200px,308px,#fff);
+	margin :0 auto;
+	.vanclFoot{
+		overflow: hidden;
+		width: 1118px;
+		height: 282px;
+		margin: 0px auto;
+		padding: 0px 40px 0px;
+		border: 1px solid #e0e0e1;
+		font-family: "Microsoft YaHei";
+		margin-bottom: 25px;
+		.f-t{
+			    margin: 33px 0px 23px;
+				overflow: hidden;
+		}
+		.f-t{
+			ul{
+				li{
+					width: 370px;
+					height: 138px;
+					border-right: 1px solid #e0e0e1;
+					margin-right: 0px;
+					p{
+						        text-align: center;
+								font-size: 14px;
+								color: #727171;
+								line-height: 26px;
+							img{
+								display: block;
+								margin: 0px auto
+							}
+					}
+					.kf1{
+						    margin: 15px auto 30px;
+					}
+					.kf{
+						margin: 0px auto;
+						width: 156px;
+						height: 32px;
+						text-align: center;
+						line-height: 32px;
+						font-size: 14px;
+						background: #b81c22;
+						color: #ffffff;
+					}
+				}
+			}
+			
+			
+		}
+		.f-b{
+			   ul{
+				   li{ 
+						    padding: 0px 65px;
+							line-height: 26px;
+							border-right: 1px solid #dadadb;
+							width: auto;
+							text-align: center;
+							margin-right: 0px;
+				   }
+			   }
+				
+		}
+	}
+	    
+}
+#copyright{
+	.footBottom{
+		width: 100%;
+		height: auto;
+		margin: 0px auto;
+		border-top: 1px solid #3e3a39;
+		p{
+			text-align: center;
+			line-height: 25px;
+			color: #3e3a39;
+			font-family: "Microsoft YaHei";
+		}
+	}
+	.subFooter{
+		    width: 980px;
+			margin: 0px auto 25px;
+			text-align: center;
+			.redLogo{
+					background: url(../../dist/img/spritesbgtop.min.png) no-repeat scroll 0 -581px transparent;
+					display: inline-block;
+					height: 42px;
+					width: 113px;
+			}
+			.costumeOrg{
+					background: url(../../dist/img/spritesbgtop.min.png) no-repeat scroll 0 -629px transparent;
+					display: inline-block;
+					height: 45px;
+					width: 156px;
+			}
+			.wsjyBzzx{
+				background: url(../../dist/img/spritesbgtop.min.png) no-repeat scroll 0 -675px transparent;
+				display: inline-block;
+				height: 42px;
+				width: 96px;
+			}
+			.vanclMsg{
+    background: url(../../dist/img/spritesbgtop.min.png) no-repeat scroll -97px -675px transparent;
+					display: inline-block;
+					height: 42px;
+					width: 101px;
+			}
+	}
+}
+.teshui {
+    background: url(http://i.vanclimg.com/search/sprites_20130606.png) no-repeat 0px -841px transparent;
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: "arial";
+    font-size: 16px;
+    height: 25px;
+    padding: 18px 0 2px 6px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 40px;
+    text-indent: -5px;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="http://i.vanclimg.com/NewVancl/Productlist/icon/icon-off.png");
+}

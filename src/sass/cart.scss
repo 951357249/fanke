@@ -1,0 +1,209 @@
+@import 'public';
+#wrapper {
+    margin: 0 auto;
+    width: 980px;
+}
+#head{
+	@include whb(1200px,126px,#fff)
+	margin: 0 auto;
+	#headTop{
+		@include whb(1200px,40px,#f7f7f7)
+		line-height: 40px;
+		#l-top{
+			float :right;
+			@include whb(438px,40px,#f7f7f7);
+			p{
+				display: inline-block;
+				color: gray;
+				font-size: 12px;
+			}
+		}
+	}
+	#ss{
+		@include whb(1200px,50px,#fff);
+		#headSearch{
+			@include whb(440px,40px,#fff);
+			float: right;
+			position: relative;
+			#headSearch-t{
+					@include whb(440px,30px,#fff);
+					margin-top: 27px;
+					position:relative;
+					text-align: center;	
+					line-height: 30px;
+					input{
+						width:278px;
+						height: 28px;
+						padding-left: 30px;
+					}
+					a{
+						width: 47px;
+						height: 31px;
+						display: block;
+						position: absolute;
+						top: 0;
+						right: 130px;
+						background: red;
+						font-size: 18px;
+						color: black;
+					}
+					span{
+						display: inline-block;
+						margin-left: 15px;
+						height: 28px;
+						width: 106px;
+						background: red;
+					}
+			}
+			#headSearch-b{
+				@include whb(440px,29px,#fff);
+				line-height: 30px;
+				position:relative;
+				margin-top:2px;
+				p{
+					padding-left: 15px;
+					font-size: 12px;
+					display: inline-block;
+					float: left;
+				}
+				a{
+					font-size: 12px;
+					display: inline-block;
+					color: #6e6e6e;
+					float: left;
+					margin-right: 10px;
+				}
+			}	
+		}
+	}
+	.navlist {
+			width: 1000px;
+			height: 22px!important;
+			margin: 30px auto!important;
+			padding-left: 200px!important;
+			position: relative!important;
+			z-index: 300!important;
+	}
+	.navlist ul li.vancllogo_Con {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: 0px;
+		background: none;
+		a{
+			margin-top: 50px;
+			width: 200px;
+			height: 70px;
+			display: inline-block;
+			background: url(../../dist/img/logo1.min.png) no-repeat 0px 20px;
+		}
+		
+	}
+	.navlist ul li {
+		float: left;
+		width: 99px;
+		line-height: 22px;
+		padding: 0px 0px 10px;
+		text-align: center;
+		font-size: 16px;
+		font-family: "Microsoft YaHei";
+		position: relative;
+		z-index: 220;
+		a{
+			color: gray;
+			text-decoration: none;
+			font-size: 12px;
+		}
+		.subNav{
+			position: absolute;
+			width: 99px;
+			background: #fff;
+			left: -2px;
+			top: 30px;
+		}
+		a:hover{
+				color: #b81c22;
+		}
+	}
+}	
+	#location {
+		background: url(//ssl.vanclimg.com/shopping/newpromotions/newProm.gif);
+		background-position: 0 0;
+		height: 28px;
+		width: 540px;
+		margin-top: 10px;
+		em{
+			color: #fff;
+			a{
+				color: #fff;
+			}
+		}
+		em,span {
+				color: #666;
+				display: inline-block;
+				font-weight: bold;
+				line-height: 28px;
+				text-align: center;
+				width: 170px;
+		}
+		
+}
+#content {
+	@include whb(980px,80px,red);
+	margin: 10px auto 0px;
+   
+	top: 104px;
+    left: 349.5px;
+	#cart-empty, .cart-loading {
+		color: Gray;
+		font-size: 14px;
+		font-weight: bold;
+		height: 50px;
+		margin-top: 50px;
+		text-align: center;
+	}
+	#cart-collocate {
+		position: absolute;
+		width: 820px;
+		top: 144px;
+		left: 80px;
+		z-index: 100;
+	}
+	#remove-product {
+		margin-top: 35px;
+		display: none;
+	}
+	#gift {
+		clear: both;
+		padding-top: 30px;
+	}
+	.cuxiao, #gift {
+		clear: both;
+		padding-top: 30px;
+	}
+}
+#footer {
+    color: #999;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+	p{
+		margin-bottom: 20px;
+	}
+	a:link, a:visited {
+    text-decoration: none;
+    color: #333;
+	}
+	.ectrustprc {
+			width: 156px;
+			height: 46px;
+	}
+	.ectrustprc, .costumeorg, .online315 {
+			display: inline-block;
+			margin-right: 20px;
+	}
+	
+
+}
+
+			
